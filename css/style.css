@@ -1,49 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: "IBM Plex Serif", serif; /*!--tipo de letra--*/
+    font-family: "IBM Plex Serif", serif;
+    /*!--tipo de letra--*/
 }
+
 body {
     background-color: rgb(241, 180, 190);
 }
-p::selection{
+
+p::selection {
     background-color: brown;
     color: white;
 }
+
 /*!----header----*/
 header {
     background-color: rgb(214, 116, 167);
     padding: 15px;
 }
+
 header h1 {
-    color: rgb(247, 247, 247);/*!---color de titulo "happy sunny"---*/
+    color: rgb(247, 247, 247);
+    /*!---color de titulo "happy sunny"---*/
     font-size: 40px;
     font-weight: 400;
     text-align: center;
 }
-header nav ul{
+
+header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-header nav ul li { /*!---esto es para dar espacio a las paginas de inicio.nosotros.prod.---*/
+
+header nav ul li {
+    /*!---esto es para dar espacio a las paginas de inicio.nosotros.prod.---*/
     margin: 5px;
 }
-header nav ul li a { /*!----color de las paginas "servicio,inicio,nosotros---*/
+
+header nav ul li a {
+    /*!----color de las paginas "servicio,inicio,nosotros---*/
     text-decoration: none;
     color: rgb(247, 247, 247);
     font-weight: 500;
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     color: brown;
     font-size: 20px;
 }
+
 /**--------main "porque tus sueños merecen una celebracion magica------*/
-.hero{
+.hero {
     height: 140vh;
     background-image: url(../img/deco\ siervo.jpeg);
     background-size: cover;
@@ -56,100 +71,117 @@ header nav ul li a:hover{
     text-align: center;
     padding: 10px;
 }
-.hero h2{
+
+.hero h2 {
     font-size: 40px;
     text-align: center;
     color: rgb(250, 248, 249);
 }
-.video-regalo{
+
+.video-regalo {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:20px;
+    padding: 20px;
 }
-.video-regalo video{
+
+.video-regalo video {
     border-radius: 10px;
     width: 60%;
     height: 90vh
 }
 
-.invitacion h2{
+.invitacion h2 {
     color: white;
     text-align: center;
     font-size: 20px;
     margin: 10px;
     padding: 10px;
 }
+
 .invitacion p {
-text-align: center;
+    text-align: center;
     padding: 15px;
     margin: 15px;
     font-size: 20px;
 }
-.triptico-imagenes img{
+
+.triptico-imagenes img {
     width: 300px;
     height: 300px;
     align-items: center;
 }
-.triptico-imagenes img{
+
+.triptico-imagenes img {
     margin: 20px 20px 20px 20px;
     padding: 20px 20px 20px;
 }
-.triptico-imagenes img{
+
+.triptico-imagenes img {
     border: 1px solid white;
 }
-.nosotros h1{
+
+.nosotros h1 {
     color: white;
     text-align: center;
     padding: 10px;
     margin: 10px;
 }
-.nosotros p{
+
+.nosotros p {
     display: flex;
     text-align: center;
     margin: 20px;
     padding: 20px;
     font-size: 20px;
 }
-.intimo{
+
+.intimo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
 }
-.intimo img{
+
+.intimo img {
     width: 250px;
     height: 320px;
     align-items: center;
 }
-.intimo img{
+
+.intimo img {
     margin: 20px 20px 20px 20px;
     padding: 20px 20px 20px;
 }
-.intimo img{
+
+.intimo img {
     border: 1px solid white;
     margin: 65px;
 }
-.servicios h1{
+
+.servicios h1 {
     color: white;
     text-align: center;
     padding: 10px;
     margin: 10px;
 }
-.servicios p{
+
+.servicios p {
     text-align: center;
     margin: 20px;
     padding: 20px;
     font-size: 20px;
 }
+
 /*!------grid--------*/
-.cotillon h2{
+.cotillon h2 {
     color: white;
     text-align: center;
     padding: 10px;
     margin: 10px;
 }
-.grid-cotillon{
+
+.grid-cotillon {
     border: solid 4px white;
     margin: 15px;
     padding: 33px;
@@ -159,51 +191,61 @@ text-align: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
 }
-.grid-cotillon div img{
+
+.grid-cotillon div img {
     width: 80%;
     height: 100%;
 }
-.img-2{
+
+.img-2 {
     grid-column: span 2;
 }
-.img-6{
+
+.img-6 {
     grid-row: span 2;
 }
-.img-8{
+
+.img-8 {
     grid-row: span 2;
 }
-.grid-cotillon h3{
+
+.grid-cotillon h3 {
     color: white;
 }
-.consultas p{
+
+.consultas p {
     text-align: center;
     color: white;
-    font-size: 30px; background-color: darksalmon;
+    font-size: 30px;
+    background-color: darksalmon;
     background-position: center;
     border: solid 2px white;
     padding: 20px;
 }
-.consultas p:hover{
+
+.consultas p:hover {
     background-color: firebrick;
 }
 
-.contactanos h1{
+.contactanos h1 {
     color: white;
     text-align: center;
     margin: 0;
     padding: 10px;
 }
-.contactanos p{
+
+.contactanos p {
     text-align: center;
-    padding:0;
+    padding: 0;
 }
-.casilla form{
+
+.casilla form {
     color: crimson;
     border: 2px solid white;
     width: 90%;
     max-width: 400px;
     padding: 20px;
-    margin: 50px auto;    
+    margin: 50px auto;
     font-size: 15px;
     text-align: center;
 
@@ -214,158 +256,173 @@ text-align: center;
 
     background-color: rgb(223, 195, 195);
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(255,182,193,0.5);
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
     z-index: 2;
     position: relative;
 }
 
-.logo{
+.logo {
     position: fixed;
     bottom: 50px;
     right: 20px;
     z-index: 1000;
 }
-.logo img{
+
+.logo img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
 }
+
 /*?-----footer----*/
-.pie-de-pagina{
-display: flex;
-justify-content: space-around;
-padding: 15px;
-background-color: rgb(214, 116, 167);;
+.pie-de-pagina {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: rgb(214, 116, 167);
+    ;
 }
-.derechos{
+
+.derechos {
     font-size: 14px;
     color: #0c0c0c;
     margin: 0;
     text-align: center;
 }
+
 /*!--empezamos con el @media query---*/
 
-@media screen and (max-width:611px){
-    header{
+@media screen and (max-width:611px) {
+    header {
         width: 120%;
         margin: 0;
     }
-    header h1{
+
+    header h1 {
         display: flex;
         text-align: center;
         font-size: 15px;
     }
-    header nav ul{  
-        display: flex;
-        flex-direction: column;
-}
-.hero{
-    width: 120%;
-    margin: 0;
-}
 
-@media screen and (max-width:597px){
-    .video-regalo{
+    header nav ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-left: 0;
     }
-}
-@media screen and (max-width:655px){
-    footer{
-        width: 100%;
+
+    .hero {
+        width: 120%;
         margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-}
-@media screen and (max-width:360px){
-    triptico-imagenes img{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 0;
-padding: 0;
-    }
-}
-.hero h2{
-    font-size: 5px;
-    display: flex;
-    flex-direction:column
-    align-items: center;
-    
-}
-/*!------seccion nosotrtos--------*/
 
-@media screen and (max-width:860px){
-    .intimo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    @media screen and (max-width:597px) {
+        .video-regalo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+        }
     }
-    .intimo img{
-        margin-bottom: 25px;
-}
-}
-@media screen and (max-width:756px){
-    .logo{
-        display: none;
-}
-.hero h2{
-    font-size: 40px;
-}
-}
 
-@media screen and (max-width:610px){
-    .grid-cotillon{
-        grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 120px;
+    @media screen and (max-width:655px) {
+        footer {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
     }
-}
-.grid-cotillon{
-    display: grid;
-    grid-auto-rows: 250px;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 35px;
-}
-}
-@media screen and (mas-width:600px){
-    .casilla form{
-    margin: 20px auto;
-    padding: 15px;
-    font-size: 14px;
-    }
-}
 
-@media screen and (max-width:450px){
-    header nosotros-inicio{
-        font-size: 30px;
+    @media screen and (max-width:360px) {
+        triptico-imagenes img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero h2 {
+            font-size: 5px;
+            display: flex;
+            flex-direction: column
+        }
     }
-        .contactanos{
+
+    /*!------seccion nosotrtos--------*/
+
+    @media screen and (max-width:860px) {
+        .intimo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .intimo img {
+            margin-bottom: 25px;
+        }
+    }
+
+    @media screen and (max-width:756px) {
+        .logo {
+            display: none;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width:610px) {
+        .grid-cotillon {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 120px;
+        }
+    }
+
+    .grid-cotillon {
+        display: grid;
+        grid-auto-rows: 250px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 35px;
+    }
+}
+    @media screen and (mas-width:600px) {
+        .casilla form {
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        header nosotros-inicio {
+            font-size: 30px;
+        }
+
+        .contactanos {
             font-size: 24px;
             margin-bottom: 20px;
             text-align: center;
         }
-        .form{
+
+        .form {
             margin-top: 20px;
             padding: 10px;
-        input, label{
-            width: 100%;
-            display: block;
+
+            input,
+            label {
+                width: 100%;
+                display: block;
+            }
         }
 
-        }
-    @media screen and(max-width:380px){
-        .triptico-imagenes img{
-            width: 90%;
-            height: auto;
-            margin: 10px auto;
-            display: block;
-        }
-        .hero h2{
-            font-size: 15px;
+        @media screen and(max-width:380px) {
+            .triptico-imagenes img {
+                width: 90%;
+                height: auto;
+                margin: 10px auto;
+                display: block;
+            }
         }
     }
-}
